@@ -1,7 +1,7 @@
-# Hello World - Codepath Pre-Work
+# :fire: Hello World - Codepath Pre-Work :fire:
 
 ### App Description
-This is a hello world app fir codepath pre-Work
+This is a hello world app for codepath pre-Work
 
 ### App Walk-though
 
