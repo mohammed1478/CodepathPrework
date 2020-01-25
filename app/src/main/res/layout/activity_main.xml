@@ -6,13 +6,94 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
+    <Button
+        android:id="@+id/resetAppBTN"
+        android:layout_width="425dp"
+        android:layout_height="548dp"
+        android:layout_marginStart="4dp"
+        android:layout_marginLeft="4dp"
+        android:alpha="0"
+        android:onClick="resetAppOnclick"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.59"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="1.0" />
+
     <TextView
+        android:id="@+id/helloTV"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Hello World!"
+        android:gravity="center"
+        android:text="Hello from Mohammed!"
+        android:textAllCaps="true"
+        android:textColor="#00BCD4"
+        android:textSize="30sp"
+        android:textStyle="bold"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.286" />
+
+    <Button
+        android:id="@+id/textColorBTN"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:background="#4CAF50"
+        android:onClick="textColorChangeOnClick"
+        android:text="Change Text Color"
+        android:textAllCaps="true"
+        android:textColor="#EFF0ED"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/backgroundColorBTN"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:background="#E91E63"
+        android:onClick="backgroundColorChangeOnClick"
+        android:text="Change Background Color"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textColorBTN"
+        app:layout_constraintVertical_bias="0.201" />
+
+    <Button
+        android:id="@+id/changeTextBTN"
+        android:layout_width="165dp"
+        android:layout_height="50dp"
+        android:background="#FF5722"
+        android:onClick="textChangeOnClick"
+        android:text="Change Text String"
+        android:textAllCaps="true"
+        android:textColor="#FFFFFF"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/backgroundColorBTN"
+        app:layout_constraintVertical_bias="0.307" />
+
+    <EditText
+        android:id="@+id/messageET"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="Input Message"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/resetAppBTN"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
